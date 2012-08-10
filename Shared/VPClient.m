@@ -8,23 +8,6 @@
 
 #import "VPClient.h"
 
-@interface VPClient () <NSStreamDelegate>
-{
-	NSInputStream *inputStream;
-	NSOutputStream *outputStream;
-	
-	NSMutableData *toSend;
-	NSMutableData *receiveBuffer;
-}
-
-- (void)sendLine:(NSString *)line;
-- (void)parseLine:(NSString *)line;
-
-- (void)parseReceivedData;
-- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent;
-
-@end
-
 @implementation VPClient
 
 - (id)initWithNetService:(NSNetService *)service userName:(NSString *)userName
@@ -44,113 +27,70 @@
 
 - (id)initWithInputStream:(NSInputStream *)input outputStream:(NSOutputStream *)output userName:(NSString *)userName;
 {
-	if (!(self = [super init])) return nil;
-	
-	inputStream = input;
-	outputStream = output;
-	
-	inputStream.delegate = self;
-	outputStream.delegate = self;
+	if (!(self = [super initWithInputStream:input outputStream:output])) return nil;
 	
 	[self sendLine:[@"VideoParty/1.0 " stringByAppendingString:userName]];
 	
 	return self;
 }
 
-- (void)sendLine:(NSString *)line;
+- (void)parseLine:(NSString *)line;
 {
-	NSString *terminatedLine = [line stringByAppendingString:@"\n"];
-	NSData *lineData = [terminatedLine dataUsingEncoding:NSUTF8StringEncoding];
+	// Ignore empty lines
+	if (line.length == 0) return;
 	
-	if (toSend.length == 0)
+	NSString *action = nil;
+	
+	NSScanner *scanner = [NSScanner scannerWithString:line];
+	
+	if (![scanner scanUpToCharactersFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet] intoString:&action]) return;
+	
+	if ([action isEqualToString:@"SetUsername"])
 	{
-		NSUInteger sent = 0;
-		NSUInteger offset = 0;
-		do
-		{
-			sent = [outputStream write:&(lineData.bytes[offset]) maxLength:lineData.length - offset];
-			offset += sent;
-		} while (offset < lineData.length && sent > 0);
+		NSString *username;
+		if (![scanner scanUpToCharactersFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet] intoString:&username]) return;
 		
-		if (offset < lineData.length)
-			[toSend appendBytes:&(lineData.bytes[offset]) length:lineData.length - offset];
+		[self.delegate vpClient:self changedUsernameTo:username];
 	}
-	else
-		[toSend appendData:lineData];
-}
-
-- (void)parseReceivedData;
-{
-	NSData *terminatorData = [NSData dataWithBytes:"\n" length:1];
-	
-	NSUInteger bytesParsed = 0;
-	
-	while(true)
+	else if ([action isEqualToString:@"SendPassword"])
 	{
-		// Search only part not yet parsed
-		NSRange searchRange = NSMakeRange(bytesParsed, receiveBuffer.length - bytesParsed);
-		if (searchRange.length == 0) break;
-		
-		// Find the next \n
-		NSRange terminatorRange = [receiveBuffer rangeOfData:terminatorData options:0 range:searchRange];
-		if (terminatorRange.location == NSNotFound) break;
-		
-		// Extract the line. Note: Ignoring terminatorRange.length, because we don't want the \n
-		// for the rest of the parsing.
-		NSRange lineRange = NSMakeRange(bytesParsed, terminatorRange.location - bytesParsed);
-		NSData *lineData = [receiveBuffer subdataWithRange:lineRange];
-		NSString *line = [[NSString alloc] initWithData:lineData encoding:NSUTF8StringEncoding];
-		
-		// Parse
-		[self parseLine:line];
-		
-		// Skip past the \n
-		bytesParsed = NSMaxRange(terminatorRange);
+		[self.delegate vpClientRequestedPassword:self];
 	}
-	
-	if (bytesParsed < receiveBuffer.length)
+	else if ([action isEqualToString:@"Tracklist"])
 	{
-		receiveBuffer = [NSMutableData dataWithData:[receiveBuffer subdataWithRange:NSMakeRange(bytesParsed, receiveBuffer.length - bytesParsed)]];
+		
+	}
+	else if ([action isEqualToString:@"Remove"])
+	{
+		
+	}
+	else if ([action isEqualToString:@"Add"])
+	{
+	
+	}
+	else if ([action isEqualToString:@"Play"])
+	{
+		
+	}
+	else if ([action isEqualToString:@"AddUser"])
+	{
+		
+	}
+	else if ([action isEqualToString:@"RemoveUser"])
+	{
+		
 	}
 }
 
-- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent;
+- (void)disconnected;
 {
-	if (streamEvent == NSStreamEventEndEncountered)
-	{
-		[inputStream close];
-		[outputStream close];
-		
-		[self.delegate vpClientDisconnected:self];
-	}
-	else if (streamEvent == NSStreamEventErrorOccurred)
-	{
-		NSError *error = [theStream streamError];
-		[inputStream close];
-		[outputStream close];
-		
-		[self.delegate vpClient:self receivedError:error];
-	}
-	else if (theStream == inputStream && streamEvent == NSStreamEventHasBytesAvailable)
-	{
-		const NSUInteger bufferSize = 1024;
-		uint8_t buffer[bufferSize];
-		
-		NSUInteger actuallyRead = 0;
-		
-		do
-		{
-			actuallyRead = [inputStream read:buffer maxLength:bufferSize];
-			[receiveBuffer appendBytes:buffer length:actuallyRead];
-		} while (actuallyRead > 0);
-	}
-	else if (theStream == outputStream && streamEvent == NSStreamEventHasSpaceAvailable)
-	{
-		if (toSend.length == 0) return;
-		
-		NSUInteger actuallySent = [outputStream write:toSend.bytes maxLength:toSend.length];
-		toSend = [NSMutableData dataWithData:[toSend subdataWithRange:NSMakeRange(actuallySent, toSend.length - actuallySent)]];
-	}
+	[self.delegate vpClientDisconnected:self];
 }
+
+- (void)receivedError:(NSError *)error;
+{
+	[self.delegate vpClient:self receivedError:error];
+}
+
 
 @end

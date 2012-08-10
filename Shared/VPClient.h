@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "VPConnection.h"
+
 @class VPClient;
 @class VPTrack;
 @class VPVideo;
@@ -23,12 +25,15 @@
 - (void)vpClient:(VPClient *)client updatedTrack:(VPTrack *)track;
 - (void)vpClient:(VPClient *)client startedPlayingTrack:(VPTrack *)track;
 
+- (void)vpClient:(VPClient *)client userConnected:(NSString *)name;
+- (void)vpClient:(VPClient *)client userDisconnected:(NSString *)name;
+
 - (void)vpClient:(VPClient *)client receivedError:(NSError *)error;
 - (void)vpClientDisconnected:(VPClient *)client;
 
 @end
 
-@interface VPClient : NSObject
+@interface VPClient : VPConnection
 
 @property (weak, nonatomic) id <VPClientDelegate> delegate;
 
@@ -39,8 +44,11 @@
 
 - (void)addVideo:(VPVideo *)video;
 
-@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy, readonly) NSString *username;
 
-@property (nonatomic, readonly) VPTrack *currentlyPlayingTrack;
+@property (nonatomic, retain, readonly) VPTrack *currentlyPlayingTrack;
+
+- (NSUInteger)countOfConnectedUsers;
+- (NSString *)objectInConnectedUsersAtIndex:(NSUInteger)index;
 
 @end
