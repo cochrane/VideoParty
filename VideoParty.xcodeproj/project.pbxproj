@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C3645515D58EC300A6BF7B /* VPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645415D58EC300A6BF7B /* VPServer.m */; };
+		52C3645615D58EC300A6BF7B /* VPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645415D58EC300A6BF7B /* VPServer.m */; };
+		52C3645A15D58ED500A6BF7B /* VPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645915D58ED500A6BF7B /* VPClient.m */; };
+		52C3645B15D58ED500A6BF7B /* VPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645915D58ED500A6BF7B /* VPClient.m */; };
+		52C3645E15D58EEE00A6BF7B /* VPBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645D15D58EEE00A6BF7B /* VPBrowser.m */; };
+		52C3645F15D58EEE00A6BF7B /* VPBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645D15D58EEE00A6BF7B /* VPBrowser.m */; };
+		52C3646215D5901F00A6BF7B /* VPTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646115D5901F00A6BF7B /* VPTrack.m */; };
+		52C3646315D5901F00A6BF7B /* VPTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646115D5901F00A6BF7B /* VPTrack.m */; };
+		52C3646615D590F600A6BF7B /* VPVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646515D590F600A6BF7B /* VPVideo.m */; };
+		52C3646715D590F600A6BF7B /* VPVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646515D590F600A6BF7B /* VPVideo.m */; };
+		52C3646A15D5917E00A6BF7B /* VPServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646915D5917E00A6BF7B /* VPServerConnection.m */; };
+		52C3646B15D5917E00A6BF7B /* VPServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646915D5917E00A6BF7B /* VPServerConnection.m */; };
+		52C3646E15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646D15D5924600A6BF7B /* VPClient+FromTrack.m */; };
+		52C3646F15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3646D15D5924600A6BF7B /* VPClient+FromTrack.m */; };
+		52DFF27B15D576BE00A72980 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DFF27A15D576BE00A72980 /* Cocoa.framework */; };
+		52DFF28515D576BE00A72980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52DFF28315D576BE00A72980 /* InfoPlist.strings */; };
+		52DFF28715D576BE00A72980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF28615D576BE00A72980 /* main.m */; };
+		52DFF28B15D576BE00A72980 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52DFF28915D576BE00A72980 /* Credits.rtf */; };
+		52DFF28E15D576BE00A72980 /* VPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF28D15D576BE00A72980 /* VPAppDelegate.m */; };
+		52DFF29115D576BE00A72980 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DFF28F15D576BE00A72980 /* MainMenu.xib */; };
+		52DFF29C15D576DA00A72980 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DFF29B15D576DA00A72980 /* UIKit.framework */; };
+		52DFF29E15D576DA00A72980 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DFF29D15D576DA00A72980 /* Foundation.framework */; };
+		52DFF2A015D576DA00A72980 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DFF29F15D576DA00A72980 /* CoreGraphics.framework */; };
+		52DFF2A615D576DA00A72980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52DFF2A415D576DA00A72980 /* InfoPlist.strings */; };
+		52DFF2A815D576DA00A72980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2A715D576DA00A72980 /* main.m */; };
+		52DFF2AC15D576DA00A72980 /* VPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2AB15D576DA00A72980 /* VPAppDelegate.m */; };
+		52DFF2B215D576ED00A72980 /* VPServiceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2B115D576ED00A72980 /* VPServiceConstants.m */; };
+		52DFF2B315D576ED00A72980 /* VPServiceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2B115D576ED00A72980 /* VPServiceConstants.m */; };
+		52DFF2B715D577A200A72980 /* VPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2B615D577A200A72980 /* VPService.m */; };
+		52DFF2B815D577A200A72980 /* VPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2B615D577A200A72980 /* VPService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52C3645315D58EC300A6BF7B /* VPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPServer.h; sourceTree = "<group>"; };
+		52C3645415D58EC300A6BF7B /* VPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPServer.m; sourceTree = "<group>"; };
+		52C3645815D58ED500A6BF7B /* VPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPClient.h; sourceTree = "<group>"; };
+		52C3645915D58ED500A6BF7B /* VPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPClient.m; sourceTree = "<group>"; };
+		52C3645C15D58EEE00A6BF7B /* VPBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPBrowser.h; sourceTree = "<group>"; };
+		52C3645D15D58EEE00A6BF7B /* VPBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPBrowser.m; sourceTree = "<group>"; };
+		52C3646015D5901F00A6BF7B /* VPTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTrack.h; sourceTree = "<group>"; };
+		52C3646115D5901F00A6BF7B /* VPTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTrack.m; sourceTree = "<group>"; };
+		52C3646415D590F600A6BF7B /* VPVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPVideo.h; sourceTree = "<group>"; };
+		52C3646515D590F600A6BF7B /* VPVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPVideo.m; sourceTree = "<group>"; };
+		52C3646815D5917E00A6BF7B /* VPServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPServerConnection.h; sourceTree = "<group>"; };
+		52C3646915D5917E00A6BF7B /* VPServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPServerConnection.m; sourceTree = "<group>"; };
+		52C3646C15D5924600A6BF7B /* VPClient+FromTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPClient+FromTrack.h"; sourceTree = "<group>"; };
+		52C3646D15D5924600A6BF7B /* VPClient+FromTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VPClient+FromTrack.m"; sourceTree = "<group>"; };
+		52DFF27615D576BE00A72980 /* VideoParty Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VideoParty Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DFF27A15D576BE00A72980 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52DFF27D15D576BE00A72980 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		52DFF27E15D576BE00A72980 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		52DFF27F15D576BE00A72980 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52DFF28215D576BE00A72980 /* VideoParty Player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoParty Player-Info.plist"; sourceTree = "<group>"; };
+		52DFF28415D576BE00A72980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52DFF28615D576BE00A72980 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52DFF28815D576BE00A72980 /* VideoParty Player-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoParty Player-Prefix.pch"; sourceTree = "<group>"; };
+		52DFF28A15D576BE00A72980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		52DFF28C15D576BE00A72980 /* VPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPAppDelegate.h; sourceTree = "<group>"; };
+		52DFF28D15D576BE00A72980 /* VPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPAppDelegate.m; sourceTree = "<group>"; };
+		52DFF29015D576BE00A72980 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		52DFF29915D576DA00A72980 /* VideoParty Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VideoParty Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DFF29B15D576DA00A72980 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		52DFF29D15D576DA00A72980 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		52DFF29F15D576DA00A72980 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		52DFF2A315D576DA00A72980 /* VideoParty Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoParty Controller-Info.plist"; sourceTree = "<group>"; };
+		52DFF2A515D576DA00A72980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52DFF2A715D576DA00A72980 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52DFF2A915D576DA00A72980 /* VideoParty Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoParty Controller-Prefix.pch"; sourceTree = "<group>"; };
+		52DFF2AA15D576DA00A72980 /* VPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPAppDelegate.h; sourceTree = "<group>"; };
+		52DFF2AB15D576DA00A72980 /* VPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPAppDelegate.m; sourceTree = "<group>"; };
+		52DFF2B015D576ED00A72980 /* VPServiceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPServiceConstants.h; sourceTree = "<group>"; };
+		52DFF2B115D576ED00A72980 /* VPServiceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPServiceConstants.m; sourceTree = "<group>"; };
+		52DFF2B515D577A200A72980 /* VPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPService.h; sourceTree = "<group>"; };
+		52DFF2B615D577A200A72980 /* VPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPService.m; sourceTree = "<group>"; };
+		52DFF2C515D57F9300A72980 /* ProtocolDescription.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProtocolDescription.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52DFF27315D576BE00A72980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF27B15D576BE00A72980 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DFF29615D576DA00A72980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF29C15D576DA00A72980 /* UIKit.framework in Frameworks */,
+				52DFF29E15D576DA00A72980 /* Foundation.framework in Frameworks */,
+				52DFF2A015D576DA00A72980 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52DFF26915D576A100A72980 = {
+			isa = PBXGroup;
+			children = (
+				52DFF2B415D576F600A72980 /* Shared */,
+				52DFF28015D576BE00A72980 /* VideoParty Player */,
+				52DFF2A115D576DA00A72980 /* VideoParty Controller */,
+				52DFF27915D576BE00A72980 /* Frameworks */,
+				52DFF27715D576BE00A72980 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52DFF27715D576BE00A72980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF27615D576BE00A72980 /* VideoParty Player.app */,
+				52DFF29915D576DA00A72980 /* VideoParty Controller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52DFF27915D576BE00A72980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF27A15D576BE00A72980 /* Cocoa.framework */,
+				52DFF29B15D576DA00A72980 /* UIKit.framework */,
+				52DFF29D15D576DA00A72980 /* Foundation.framework */,
+				52DFF29F15D576DA00A72980 /* CoreGraphics.framework */,
+				52DFF27C15D576BE00A72980 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52DFF27C15D576BE00A72980 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF27D15D576BE00A72980 /* AppKit.framework */,
+				52DFF27E15D576BE00A72980 /* CoreData.framework */,
+				52DFF27F15D576BE00A72980 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		52DFF28015D576BE00A72980 /* VideoParty Player */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF28C15D576BE00A72980 /* VPAppDelegate.h */,
+				52DFF28D15D576BE00A72980 /* VPAppDelegate.m */,
+				52DFF28F15D576BE00A72980 /* MainMenu.xib */,
+				52DFF28115D576BE00A72980 /* Supporting Files */,
+				52DFF2B515D577A200A72980 /* VPService.h */,
+				52DFF2B615D577A200A72980 /* VPService.m */,
+			);
+			path = "VideoParty Player";
+			sourceTree = "<group>";
+		};
+		52DFF28115D576BE00A72980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF28215D576BE00A72980 /* VideoParty Player-Info.plist */,
+				52DFF28315D576BE00A72980 /* InfoPlist.strings */,
+				52DFF28615D576BE00A72980 /* main.m */,
+				52DFF28815D576BE00A72980 /* VideoParty Player-Prefix.pch */,
+				52DFF28915D576BE00A72980 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52DFF2A115D576DA00A72980 /* VideoParty Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF2AA15D576DA00A72980 /* VPAppDelegate.h */,
+				52DFF2AB15D576DA00A72980 /* VPAppDelegate.m */,
+				52DFF2A215D576DA00A72980 /* Supporting Files */,
+			);
+			path = "VideoParty Controller";
+			sourceTree = "<group>";
+		};
+		52DFF2A215D576DA00A72980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF2A315D576DA00A72980 /* VideoParty Controller-Info.plist */,
+				52DFF2A415D576DA00A72980 /* InfoPlist.strings */,
+				52DFF2A715D576DA00A72980 /* main.m */,
+				52DFF2A915D576DA00A72980 /* VideoParty Controller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52DFF2B415D576F600A72980 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				52DFF2B015D576ED00A72980 /* VPServiceConstants.h */,
+				52DFF2B115D576ED00A72980 /* VPServiceConstants.m */,
+				52DFF2C515D57F9300A72980 /* ProtocolDescription.md */,
+				52C3645315D58EC300A6BF7B /* VPServer.h */,
+				52C3645415D58EC300A6BF7B /* VPServer.m */,
+				52C3646815D5917E00A6BF7B /* VPServerConnection.h */,
+				52C3646915D5917E00A6BF7B /* VPServerConnection.m */,
+				52C3645815D58ED500A6BF7B /* VPClient.h */,
+				52C3645915D58ED500A6BF7B /* VPClient.m */,
+				52C3645C15D58EEE00A6BF7B /* VPBrowser.h */,
+				52C3645D15D58EEE00A6BF7B /* VPBrowser.m */,
+				52C3646015D5901F00A6BF7B /* VPTrack.h */,
+				52C3646115D5901F00A6BF7B /* VPTrack.m */,
+				52C3646415D590F600A6BF7B /* VPVideo.h */,
+				52C3646515D590F600A6BF7B /* VPVideo.m */,
+				52C3646C15D5924600A6BF7B /* VPClient+FromTrack.h */,
+				52C3646D15D5924600A6BF7B /* VPClient+FromTrack.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52DFF27515D576BE00A72980 /* VideoParty Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DFF29215D576BE00A72980 /* Build configuration list for PBXNativeTarget "VideoParty Player" */;
+			buildPhases = (
+				52DFF27215D576BE00A72980 /* Sources */,
+				52DFF27315D576BE00A72980 /* Frameworks */,
+				52DFF27415D576BE00A72980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VideoParty Player";
+			productName = "VideoParty Player";
+			productReference = 52DFF27615D576BE00A72980 /* VideoParty Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52DFF29815D576DA00A72980 /* VideoParty Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DFF2AD15D576DA00A72980 /* Build configuration list for PBXNativeTarget "VideoParty Controller" */;
+			buildPhases = (
+				52DFF29515D576DA00A72980 /* Sources */,
+				52DFF29615D576DA00A72980 /* Frameworks */,
+				52DFF29715D576DA00A72980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VideoParty Controller";
+			productName = "VideoParty Controller";
+			productReference = 52DFF29915D576DA00A72980 /* VideoParty Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52DFF26B15D576A100A72980 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 52DFF26E15D576A100A72980 /* Build configuration list for PBXProject "VideoParty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52DFF26915D576A100A72980;
+			productRefGroup = 52DFF27715D576BE00A72980 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52DFF27515D576BE00A72980 /* VideoParty Player */,
+				52DFF29815D576DA00A72980 /* VideoParty Controller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52DFF27415D576BE00A72980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF28515D576BE00A72980 /* InfoPlist.strings in Resources */,
+				52DFF28B15D576BE00A72980 /* Credits.rtf in Resources */,
+				52DFF29115D576BE00A72980 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DFF29715D576DA00A72980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF2A615D576DA00A72980 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52DFF27215D576BE00A72980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF28715D576BE00A72980 /* main.m in Sources */,
+				52DFF28E15D576BE00A72980 /* VPAppDelegate.m in Sources */,
+				52DFF2B215D576ED00A72980 /* VPServiceConstants.m in Sources */,
+				52DFF2B715D577A200A72980 /* VPService.m in Sources */,
+				52C3645515D58EC300A6BF7B /* VPServer.m in Sources */,
+				52C3645A15D58ED500A6BF7B /* VPClient.m in Sources */,
+				52C3645E15D58EEE00A6BF7B /* VPBrowser.m in Sources */,
+				52C3646215D5901F00A6BF7B /* VPTrack.m in Sources */,
+				52C3646615D590F600A6BF7B /* VPVideo.m in Sources */,
+				52C3646A15D5917E00A6BF7B /* VPServerConnection.m in Sources */,
+				52C3646E15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DFF29515D576DA00A72980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DFF2A815D576DA00A72980 /* main.m in Sources */,
+				52DFF2AC15D576DA00A72980 /* VPAppDelegate.m in Sources */,
+				52DFF2B315D576ED00A72980 /* VPServiceConstants.m in Sources */,
+				52DFF2B815D577A200A72980 /* VPService.m in Sources */,
+				52C3645615D58EC300A6BF7B /* VPServer.m in Sources */,
+				52C3645B15D58ED500A6BF7B /* VPClient.m in Sources */,
+				52C3645F15D58EEE00A6BF7B /* VPBrowser.m in Sources */,
+				52C3646315D5901F00A6BF7B /* VPTrack.m in Sources */,
+				52C3646715D590F600A6BF7B /* VPVideo.m in Sources */,
+				52C3646B15D5917E00A6BF7B /* VPServerConnection.m in Sources */,
+				52C3646F15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52DFF28315D576BE00A72980 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DFF28415D576BE00A72980 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52DFF28915D576BE00A72980 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DFF28A15D576BE00A72980 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		52DFF28F15D576BE00A72980 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DFF29015D576BE00A72980 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		52DFF2A415D576DA00A72980 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DFF2A515D576DA00A72980 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52DFF27015D576A100A72980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		52DFF27115D576A100A72980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		52DFF29315D576BE00A72980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoParty Player/VideoParty Player-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VideoParty Player/VideoParty Player-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52DFF29415D576BE00A72980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoParty Player/VideoParty Player-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VideoParty Player/VideoParty Player-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		52DFF2AE15D576DA00A72980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoParty Controller/VideoParty Controller-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VideoParty Controller/VideoParty Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52DFF2AF15D576DA00A72980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoParty Controller/VideoParty Controller-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VideoParty Controller/VideoParty Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52DFF26E15D576A100A72980 /* Build configuration list for PBXProject "VideoParty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DFF27015D576A100A72980 /* Debug */,
+				52DFF27115D576A100A72980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DFF29215D576BE00A72980 /* Build configuration list for PBXNativeTarget "VideoParty Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DFF29315D576BE00A72980 /* Debug */,
+				52DFF29415D576BE00A72980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DFF2AD15D576DA00A72980 /* Build configuration list for PBXNativeTarget "VideoParty Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DFF2AE15D576DA00A72980 /* Debug */,
+				52DFF2AF15D576DA00A72980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52DFF26B15D576A100A72980 /* Project object */;
+}
