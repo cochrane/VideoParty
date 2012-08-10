@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52663F9915D5BB510064DCE5 /* VPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 52663F9815D5BB510064DCE5 /* VPConnection.m */; };
+		52663F9A15D5BB510064DCE5 /* VPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 52663F9815D5BB510064DCE5 /* VPConnection.m */; };
 		52C3645515D58EC300A6BF7B /* VPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645415D58EC300A6BF7B /* VPServer.m */; };
 		52C3645615D58EC300A6BF7B /* VPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645415D58EC300A6BF7B /* VPServer.m */; };
 		52C3645A15D58ED500A6BF7B /* VPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3645915D58ED500A6BF7B /* VPClient.m */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52663F9715D5BB510064DCE5 /* VPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPConnection.h; sourceTree = "<group>"; };
+		52663F9815D5BB510064DCE5 /* VPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPConnection.m; sourceTree = "<group>"; };
 		52C3645315D58EC300A6BF7B /* VPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPServer.h; sourceTree = "<group>"; };
 		52C3645415D58EC300A6BF7B /* VPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPServer.m; sourceTree = "<group>"; };
 		52C3645815D58ED500A6BF7B /* VPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPClient.h; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				52C3646515D590F600A6BF7B /* VPVideo.m */,
 				52C3646C15D5924600A6BF7B /* VPClient+FromTrack.h */,
 				52C3646D15D5924600A6BF7B /* VPClient+FromTrack.m */,
+				52663F9715D5BB510064DCE5 /* VPConnection.h */,
+				52663F9815D5BB510064DCE5 /* VPConnection.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				52C3646615D590F600A6BF7B /* VPVideo.m in Sources */,
 				52C3646A15D5917E00A6BF7B /* VPServerConnection.m in Sources */,
 				52C3646E15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */,
+				52663F9915D5BB510064DCE5 /* VPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +343,7 @@
 				52C3646715D590F600A6BF7B /* VPVideo.m in Sources */,
 				52C3646B15D5917E00A6BF7B /* VPServerConnection.m in Sources */,
 				52C3646F15D5924700A6BF7B /* VPClient+FromTrack.m in Sources */,
+				52663F9A15D5BB510064DCE5 /* VPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
