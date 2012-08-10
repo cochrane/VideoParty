@@ -24,6 +24,7 @@
 - (void)vpClient:(VPClient *)client startedPlayingTrack:(VPTrack *)track;
 
 - (void)vpClient:(VPClient *)client receivedError:(NSError *)error;
+- (void)vpClientDisconnected:(VPClient *)client;
 
 @end
 
@@ -32,7 +33,7 @@
 @property (weak, nonatomic) id <VPClientDelegate> delegate;
 
 - (id)initWithNetService:(NSNetService *)service userName:(NSString *)userName;
-- (id)initWithWriteStream:(CFWriteStreamRef)writeStream readStream:(CFReadStreamRef)readStream;
+- (id)initWithInputStream:(NSInputStream *)input outputStream:(NSOutputStream *)output userName:(NSString *)userName;
 
 - (void)setPassword:(NSString *)password;
 
