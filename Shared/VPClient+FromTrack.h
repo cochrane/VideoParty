@@ -13,6 +13,6 @@
 @interface VPClient (FromTrack)
 
 - (void)removeTrack:(VPTrack *)track;
-- (void)voteOnTrack:(VPTrack *)track isUp:(BOOL)upOrDown;
+- (void)voteOnTrack:(VPTrack *)track delta:(NSInteger)upOrDown;
 
 @end

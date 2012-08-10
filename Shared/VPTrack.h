@@ -21,6 +21,8 @@
 @property (nonatomic, assign) BOOL canRemove;
 @property (nonatomic, assign) BOOL canVoteUp;
 @property (nonatomic, assign) BOOL canVoteDown;
+@property (nonatomic, assign) BOOL wasSubmittedByMe;
+@property (nonatomic, assign) BOOL yetToPlay;
 
 - (void)remove;
 - (void)voteUp;

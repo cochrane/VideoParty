@@ -15,6 +15,7 @@
 @protocol VPClientDelegate <NSObject>
 
 - (void)vpClientRequestedPassword:(VPClient *)client;
+- (void)vpClient:(VPClient *)client changedUsernameTo:(NSString *)newName;;
 
 - (void)vpClient:(VPClient *)client gotTrackList:(NSArray *)track;
 - (void)vpClient:(VPClient *)client addedTrack:(VPTrack *)track;
@@ -36,5 +37,9 @@
 - (void)setPassword:(NSString *)password;
 
 - (void)addVideo:(VPVideo *)video;
+
+@property (nonatomic, copy) NSString *username;
+
+@property (nonatomic, readonly) VPTrack *currentlyPlayingTrack;
 
 @end
