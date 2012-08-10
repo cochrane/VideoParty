@@ -14,6 +14,9 @@
 
 @property (nonatomic, copy) VPVideo *video;
 
+// Unique for a given server session
+@property (nonatomic, assign) NSUInteger trackID;
+
 @property (nonatomic, assign) NSUInteger positionInList;
 @property (nonatomic, assign) NSInteger votes;
 @property (nonatomic, copy) NSString *submitter;
